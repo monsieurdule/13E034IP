@@ -23,7 +23,10 @@
     align-items: stretch;
     width: 50%;
 }
-
+.faq-body {
+    overflow-y : scroll;
+    height: 300px;
+}
 body {
     background-color: #EBEBEB;
     margin: 0;
@@ -94,6 +97,10 @@ li label:hover {
 /* Change color of dropdown links on hover */
 
 .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown-admin-content a:hover {
     background-color: #ddd;
 }
 
