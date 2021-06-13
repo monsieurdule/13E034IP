@@ -39,8 +39,7 @@ body {
     justify-content: space-evenly;
 }
 
-.login-button,
-.signup-button {
+.login-button, .signup-button {
     align-content: center;
     width: 65px;
     height: 35px;
@@ -51,8 +50,7 @@ body {
     cursor: pointer;
 }
 
-.login-button:hover,
-.signup-button:hover {
+.login-button:hover, .signup-button:hover {
     background-color: aliceblue;
     transition: all;
     transition-duration: 0.4s;
