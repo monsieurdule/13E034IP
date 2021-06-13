@@ -18,26 +18,26 @@
                 <!--<a href="index.html"><img src="../images/arrow-left.svg"
                         alt="arrow-img"></a>-->
                 <div class="form-content">
-                    <form>
+                    <form action="../php/login.php" method="POST">
                         <label for="email">E-mail:</label><br>
                         <input type="text" id="LoginPageEmail"
-                            name="LoginPageEmail"><br>
+                            name="LoginPageEmail" required><br>
                         <label for="pwd">Sifra:</label><br>
-                        <input type="text" id="LoginPagePassword"
-                            name="LoginPagePassword">
-                    </form>
+                        <input type="password" id="LoginPagePassword"
+                            name="LoginPagePassword" required><br>
 
-                    <a href="#">Zaboravili ste sifru?</a>
-                    <div class="buttons">
-                        <div class="login-btn">
-                            <button type="submit" class="pbtn login-button">
-                                Login
-                            </button>
-                        </div>
-                        <div class="signup-btn">
-                            <a href="signup.html"><button type="button"
+                        <a href="../php/test.php">Zaboravili ste sifru?</a>
+                        <div class="buttons">
+                            <div class="login-btn">
+                                <button type="submit" class="pbtn login-button"
+                                    name="btnLoginSubmit">
+                                    Login
+                                </button>
+                            </div>
+                            <a href="signup.html">
+                                <button type="button"
                                     class="pbtn signup-button">Sign Up</button></a>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>

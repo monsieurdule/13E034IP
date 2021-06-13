@@ -1,4 +1,4 @@
-<?
+<?php
 
 $SignUpFirstName = $_POST['SignUpFirstName'];
 $SignUpLastName = $_POST['SignUpLastName'];
@@ -12,7 +12,9 @@ $conn = new mysqli('localhost', 'root', '', 'G09DB');
 if ($conn->connect_error) {
     die('Connection Failed');
 } else {
-    $stmt = $conn->prepare("insert into registration (SignUpFirstName, SignUpLastName,
+
+    //$sql = "INSERT INTO accounts ()";
+    $stmt = $conn->prepare("insert into accounts (SignUpFirstName, SignUpLastName,
                             SignUpJMBG, SignUpTel, SignUpEmail, SignUpPassword)
     values(?, ?, ?, ?, ?, ?)");
     $stmt->bind_param("ssssss", $SignUpFirstName, $SignUpLastName, $SignUpJMBG, $SignUpTel, $SignUpEmail, $SignUpPassword);
@@ -24,3 +26,4 @@ if ($conn->connect_error) {
     $stmt->close();
     $conn->close();
 }
+?>

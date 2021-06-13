@@ -13,26 +13,32 @@
 <body>
     <div class="container">
         <div class="form-box-medic">
-            <a href="admin.html"><img src="../images/arrow-left.svg" alt="arrow-img"></a>
+            <a href="../php/admin.php"><img src="../images/arrow-left.svg" alt="arrow-img"></a>
             <div class="form-content">
-                <form>
+                <form action="../php/inputmedic.php" method="POST">
                     <label for="ndays">Ime:</label><br>
-                    <input type="text" id="ndays" name="ndays"><br>
+                    <input type="text" id="MedicFirstName" name="MedicFirstName"><br>
                     <label for="nhours">Prezime:</label><br>
-                    <input type="text" id="nhours" name="nhours"><br>
-                    <label for="nhours">Licni broj:</label><br>
-                    <input type="text" id="nhours" name="nhours"><br>
+                    <input type="text" id="MedicLastName" name="MedicLastName"><br>
                     <label for="nhours">Broj telefona:</label><br>
-                    <input type="text" id="nhours" name="nhours"><br>
+                    <input type="text" id="MedicPhone" name="MedicPhone"><br>
                     <label for="nhours">E-mail:</label><br>
-                    <input type="text" id="nhours" name="nhours"><br>
+                    <input type="text" id="MedicEmail" name="MedicEmail"><br>
                     <label for="nhours">Sifra:</label><br>
-                    <input type="text" id="nhours" name="nhours"><br>
-                    <label for="nhours">Radno vreme:</label><br>
-                    <input type="text" id="nhours" name="nhours"><br>
+                    <input type="password" id="MedicPassword" name="MedicPassword"><br>
+                    <label for="nhours">Licni broj:</label><br>
+                    <input type="text" id="MedicJMBG" name="MedicJMBG"><br>
+                    <label for="nhours">Opis:</label><br>
+                    <input type="text" id="MedicDesc" name="MedicDesc"><br>
+                    <label for="nhours">Tip:</label><br>
+                    <select type="text" id="MedicType" name="MedicType">
+                        <option value="L">Lekar</option>
+                        <option value="O">Osoblje</option>
+                    </select><br>
                     <label for="nhours">Br pacijenata po satu:</label><br>
-                    <input type="text" id="nhours" name="nhours"><br><br>
-                    <input type="submit">
+                    <input type="text" id="MedicNumberOfPatients" name="MedicNumberOfPatients"><br>
+                    <br>
+                    <input type="submit" name="MedicSubmitInput">
                 </form>
             </div>
         </div>
