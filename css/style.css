@@ -7,19 +7,35 @@
 
 .btn {
     border: 1px solid #FFA987;
-    background-color: none;
+    background-color: transparent;
     padding: 10px 20px;
     font-size: 20px;
     font-family: arvo;
     cursor: pointer;
     width: 120px;
     color: #1E1E24;
+    transition: 0.3s;
 }
 
 .btn:hover {
     background-color: #FFA987;
-    transition: all;
     border: 1px solid #1E1E24;
+}
+
+.pbtn {
+    border: 1px solid #FFA987;
+    background-color: #B5BAD0;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: arvo;
+    cursor: pointer;
+    width: 120px;
+    color: #1E1E24;
+    transition: 0.3s;
+}
+
+.pbtn:hover {
+    background-color: #ddd;
 }
 
 .LoginModal {
@@ -185,4 +201,5 @@ li label:hover {
 
 .form-content {
     text-align: center;
+    margin-top: 20px;
 }
