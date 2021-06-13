@@ -40,7 +40,6 @@ body {
     background-color: aqua;
 }
 
-
 /*
 .login-btn,
 .signup-btn {
@@ -88,12 +87,19 @@ body {
 .form-box-date {
     display: flex;
     min-width: 500px;
-    min-height: 320px;
+    min-height: 100px;
+    padding-bottom: 20px;
     margin-top: 10%;
     background-color: #FFA987;
     flex-direction: column;
     border-radius: 7px;
     font-family: arvo;
+}
+
+#brDana {
+    margin-left: calc(50% - 88.5px);
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 input[type=submit] {
