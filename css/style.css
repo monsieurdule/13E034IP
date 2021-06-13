@@ -5,6 +5,23 @@
     align-items: stretch;
 }
 
+.btn {
+    border: 1px solid #FFA987;
+    background-color: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: arvo;
+    cursor: pointer;
+    width: 120px;
+    color: #1E1E24;
+}
+
+.btn:hover {
+    background-color: #FFA987;
+    transition: all;
+    border: 1px solid #1E1E24;
+}
+
 .LoginModal {
     display: none;
     /* Hidden by default */
@@ -164,4 +181,8 @@ li label:hover {
     text-align: justify;
     margin-left: 15%;
     margin-right: 15%;
+}
+
+.form-content {
+    text-align: center;
 }
