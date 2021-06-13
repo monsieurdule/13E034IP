@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+    <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zdravlje.rs</title>
-    <link rel="stylesheet" href="../css/inputadmin.css">
-    <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
-</head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>zdravlje.rs</title>
+        <link rel="stylesheet" href="../css/inputadmin.css">
+        <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap"
+            rel="stylesheet">
+    </head>
 
-<body>
-    <div class="container">
-        <div class="form-box-signup">
-            <a href="admin.html"><img src="../images/arrow-left.svg" alt="arrow-img"></a>
-            <div class="form-content">
-                <form>
-                    <label for="ndays">Ime:</label><br>
-                    <input type="text" id="ndays" name="ndays"><br>
-                    <label for="nhours">Prezime:</label><br>
-                    <input type="text" id="nhours" name="nhours"><br>
-                    <label for="nhours">Licni broj:</label><br>
-                    <input type="text" id="nhours" name="nhours"><br>
-                    <label for="nhours">Broj telefona:</label><br>
-                    <input type="text" id="nhours" name="nhours"><br>
-                    <label for="nhours">E-mail:</label><br>
-                    <input type="text" id="nhours" name="nhours"><br>
-                    <label for="nhours">Sifra:</label><br>
-                    <input type="text" id="nhours" name="nhours"><br><br>
-                    <input type="submit">
-                </form>
+    <body>
+        <div class="container">
+            <div class="form-box-signup">
+                <a href="admin.html"><img src="../images/arrow-left.svg"
+                        alt="arrow-img"></a>
+                <div class="form-content">
+                    <form name="SignUpForm" action="../php/SignUp.php"
+                        method="POST">
+                        <label>Ime:</label><br>
+                        <input type="text" id="SignUpFirstName"
+                            name="SignUpFirstName"><br>
+                        <label for="nhours">Prezime:</label><br>
+
+                        <input type="text" id="SignUpLastName"
+                            name="SignUpLastName"><br>
+                        <label for="nhours">Licni broj:</label><br>
+                        <input type="text" id="SignUpJMBG" name="SignUpJMBG"><br>
+                        <label for="nhours">Broj telefona:</label><br>
+                        <input type="text" id="SignUpTel" name="SignUpTel"><br>
+                        <label for="nhours">E-mail:</label><br>
+                        <input type="text" id="SignUpEmail" name="SignUpEmail"><br>
+                        <label for="nhours">Sifra:</label><br>
+                        <input type="text" id="SignUpPassword"
+                            name="SignUpPassword"><br><br>
+                        <input type="submit">
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-</body>
+    </body>
